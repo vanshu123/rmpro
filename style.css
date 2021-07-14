@@ -38,8 +38,10 @@ li{
     list-style-type:none;
 }
 nav{
-    background-color: #fff;
+    background-color:rgb(218, 203, 203);
     padding:0.4em;
+    position: fixed;
+    width: 100%;
 }
 nav ul li{
     float: left;
@@ -160,12 +162,34 @@ input{
 p{
     text-align:justify;
 }
+.servcontent section{
+    text-align:center;
+}
+.careerhead{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("img/careerhead.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    color: #F0F0F0;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 1em;
+    height:20em;
+    text-align: center; 
+}
+.carimg{
+    width:256px;
+    height:128px;
+}
 @media (min-width:600px){
 .aboutushead{
-    height:30em;
+    height:35em;
 }
 .serviceshead{
-    height:30em;
+    height:35em;
+}
+.careerhead{
+    height:38em;
 }
 .navbtn{
     display:none;
@@ -176,7 +200,7 @@ nav ul li a{
 }
 nav ul{
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
    
     visibility:visible;
@@ -187,7 +211,7 @@ nav ul{
 .flex-d{
      flex-direction:row;
      flex-wrap:wrap;
-
+     margin:2em;
 }
 .flex-d section{
     margin: 0 auto;
