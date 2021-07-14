@@ -1,0 +1,153 @@
+*{
+    box-sizing:border-box;
+    overflow-x:hidden;
+    margin:0;
+    font-family: "Salesforce Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+header { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("img/head.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    color: #F0F0F0;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 1em;
+    height:35em;
+    text-align: center;
+}
+.head{
+    z-index:1;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+    height: 100%;
+
+}
+.head h1,h2,h3{
+    margin:0;
+}
+li{
+    list-style-type:none;
+}
+nav{
+    background-color: #333;
+    padding:1em;
+}
+nav ul li{
+    float: left;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav ul{
+    display:flex;flex-direction:column;list-style-type:none;font-weight:bold;visibility:visible;padding:0;
+}
+.flex-d{
+    display:flex;justify-content:space-between;flex-wrap:nowrap;flex-direction:column;
+}
+.flex-d section{
+    border:none;
+    width:90%;
+    padding:1em;
+   
+    box-shadow:5px 5px 5px 5px #777;
+    margin:1em auto;
+    text-align:center;
+    background-color:white;
+}
+
+h2{
+    text-align:center;
+    
+}
+h3{
+    padding:0.5em;
+}
+p{
+    margin:1.5em;
+}
+.img{
+    height:200px;
+    width:300;
+}
+.downnav{
+    display:none;
+    clear:both;
+}
+.downnav li{
+
+    width:100%;
+}
+.punch{
+    padding:2em;
+
+}
+.director{
+    background-color: lavender;
+}
+.help h3{
+    background-color: orange;
+    width:fit-content;
+    margin:1em auto;
+
+}
+button{
+    background-color: orange;
+    width:fit-content;
+    <!-- margin:1em auto;    -->
+ 
+}
+.subscribe{
+    text-align:center;
+}
+input{
+    margin:0 auto;
+    padding:1em;
+}
+.common h2{
+    margin:2em;
+    background-color:rgba(0, 0, 0, 0.4);
+    width:fit-content;
+    margin:2em auto;
+    padding:1em;
+}
+
+@media (min-width:600px){
+.navbtn{
+    display:none;
+}
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+nav ul{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:1em;
+    visibility:visible;
+}
+.downnav li{
+    padding: 0 1em;
+}
+.flex-d{
+     flex-direction:row;
+     flex-wrap:wrap;
+
+}
+.flex-d section{
+    margin: 0 auto;
+    width:30%;
+}
+.downnav{
+    display:flex;
+    justify-content:space-around;
+}
+.director{
+    width:50%;
+    float:right;
+    margin:5em;
+}
+}
