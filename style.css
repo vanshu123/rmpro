@@ -20,6 +20,7 @@ main{
     font-family: Georgia, "Times New Roman", serif;
     padding: 1em;
     height:35em;
+
     text-align: center;
 }
 .head{
@@ -42,6 +43,8 @@ nav{
     padding:0.4em;
     position: fixed;
     width: 100%;
+    
+    right: 0;
 }
 nav ul li{
     float: left;
@@ -68,7 +71,7 @@ nav ul{
 
 h2{
     text-align:center;
-    
+   
 }
 h3{
     padding:0.5em;
@@ -140,6 +143,7 @@ input{
     font-family: Georgia, "Times New Roman", serif;
     padding: 1em;
     height:20em;
+
     text-align: center; 
 }
 .aboutuspunch p{
@@ -176,10 +180,27 @@ p{
     padding: 1em;
     height:20em;
     text-align: center; 
+   
 }
 .carimg{
     width:256px;
     height:128px;
+}
+.contacthead{
+    background-image:linear-gradient(
+        70deg
+        ,#283d4b 0%,rgba(128,103,79,0.5) 100%),url(img/contacthead.jpg);
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        color: #F0F0F0;
+        font-family: Georgia, "Times New Roman", serif;
+        padding: 1em;
+        height:20em;
+        text-align: center;     
+ 
+
+
 }
 @media (min-width:600px){
 .aboutushead{
@@ -205,9 +226,9 @@ nav ul{
    
     visibility:visible;
 }
-.downnav li{
+/* .downnav li{
     padding: 0 1em;
-}
+} */
 .flex-d{
      flex-direction:row;
      flex-wrap:wrap;

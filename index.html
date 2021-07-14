@@ -12,10 +12,9 @@
 </head>
 <body>
     <nav>
-        
         <button class="navbtn" id="navbt" onclick="myFunction()" style="float:right;">Show navbar</button>
         <ul id="list">
-            <li style="flex:1;"><img class ="logo" src="img/logo.png" height="43" width="89"></li>
+            <li><img style="flex:1;" class ="logo" src="img/logo.png" height="43" width="89"></li>
             <div style="flex:0.7;" class="downnav" id="navdown">
             <li class="rli"><a href="#">HOME</a></li>
             <li class="rli"><a href="about-us.html">ABOUT US</a></li>
@@ -25,6 +24,18 @@
             </div>
 
         </ul>
+        <!-- <button class="navbtn" id="navbt" onclick="myFunction()" style="float:right;">Show navbar</button>
+        <ul id="list">
+            <li style="flex:0.2;"><img class ="logo" src="img/logo.png" height="43" width="89"></li>
+            <div style="flex:0.8;" class="downnav" id="navdown">
+            <li class="rli"><a href="#">HOME</a></li>
+            <li class="rli"><a href="about-us.html">ABOUT US</a></li>
+            <li class="rli"><a href="services.html">SERVICES</a></li>
+            <li class="rli"><a href="career.html">CAREER</a></li>
+            <li class="rli"><a href="contact-us.html">CONTACT US</a></li>
+            </div>
+
+        </ul> -->
     </nav>
     <header class="indexhead">
         <div class="head">
@@ -156,7 +167,7 @@
         if (x.style.display === "none") {
             x.style.display = "flex";
             x.style.flexDirection="column";
-            y.style.borderColor= " red";
+            x.style.width=90%;
         } else {
             x.style.display = "none";
         }
