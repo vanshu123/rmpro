@@ -114,6 +114,12 @@ input{
     padding:1em;
 }
 
+.logo{
+    margin-top: .7em;
+}
+.navbtn{
+    margin-top:.7em;
+}
 @media (min-width:600px){
 .navbtn{
     display:none;
